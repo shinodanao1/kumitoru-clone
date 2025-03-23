@@ -28,7 +28,7 @@ export default function Toppage() {
             <section className="pt-10">
                 {/* []を使わないで　scrollの文字をメイン画像と横を少し被らせて表示させる方法がわかりませんでした */}
                 <div className="w-[90%] h-[533px] relative bg-cover bg-center ml-auto" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw2MzQ2fDB8MXxzZWFyY2h8NXx8d2VifGVufDB8fHx8MTY0MjM2NzcxNA&ixlib=rb-1.2.1&q=80&w=1080')" }}>
-                    <div className="w-[1294px] h-[273px] px-24 py-36 flex flex-col flex-nowrap items-start justify-center m-0 p-0 max-w-full text-white">
+                    <div className="w-[1294px] h-[273px] px-24 py-36 flex flex-col max-w-full text-white">
                         <p className="text-4xl">
                             初期費用無料
                             <br />
