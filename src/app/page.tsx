@@ -1,103 +1,61 @@
-import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+export default function Toppage() {
+    return (
+        <div>
+            {/* header */}
+            <section className="p-10">
+                <header className="flex items-center justify-between">
+                    {/* 左のロゴ */}
+                    <div className="flex items-center">
+                        <img src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadMmzW3G/s-2400x579_v-frms_webp_a8d3e5b1-8df1-4d11-b494-e7259b9dffb6_small.webp" className="w-[160px] h-auto" />
+                    </div>
+                    {/* 右のメニュー */}
+                    <div className="flex justify-end space-x-8">
+                        <a href="">特徴</a>
+                        <a href="">選ばれる理由</a>
+                        <a href="">制作の流れ</a>
+                        <a href="">料金プラン</a>
+                        <a href="">制作実績</a>
+                        <a href={""} className="flex items-center gap-2">
+                            <img src="https://files.svgcdn.io/material-symbols-light/docs-outline.svg" width={28} height={28} />
+                            <p>無料相談</p>
+                        </a>
+                    </div>
+                </header>
+            </section>
+            {/* メインセクション */}
+            <section className="pt-10">
+                {/* []を使わないで　scrollの文字をメイン画像と横を少し被らせて表示させる方法がわかりませんでした */}
+                <div className="w-[90%] h-[533px] relative bg-cover bg-center ml-auto" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw2MzQ2fDB8MXxzZWFyY2h8NXx8d2VifGVufDB8fHx8MTY0MjM2NzcxNA&ixlib=rb-1.2.1&q=80&w=1080')" }}>
+                    <div className="w-[1294px] h-[273px] px-24 py-36 flex flex-col flex-nowrap items-start justify-center m-0 p-0 max-w-full text-white">
+                        <p className="text-4xl">
+                            初期費用無料
+                            <br />
+                            サブスクで高品質なホームページを提供
+                        </p>
+                        <p>
+                            私たちはお客様の力になることを目的としています。煩雑な手続きや処理はすべてこちらで代行します
+                            <br />
+                            また、コンテンツに関してもこちらで意汲み取り、プロのデザイナーが制作する高品質なホームページを制作いたします。
+                            <br />
+                            まずはお気軽に無料ホームページ制作相談をご利用ください。
+                        </p>
+                        <a href={""} className="flex items-center gap-2">
+                            <img src="https://files.svgcdn.io/material-symbols-light/docs-outline.svg" width={28} height={28} />
+                            <p>無料相談</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div className="w-[10%] flex justify-center ">
+                <img
+                    src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadMmzW3G/s-108x665_v-fs_webp_1ae37481-905d-4f04-8997-946980c08d02_small.webp"
+                    height={123}
+                    width={20}
+                    className="items-center"
+                />
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    )
 }
