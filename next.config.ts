@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
         hostname: 'files.svgcdn.io',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      },
     ],
   },
 };
