@@ -39,11 +39,11 @@ export default function TopPage() {
                     />
                 </div>
                 {/* 2 */}
-                <div className="flex-1 flex flex-col">
+                <div className="flex-1 flex flex-col border-b-2 border-gray-500">
                     <div className="flex-1 py-x bg-center bg-cover rounded-2xl bg-opacity-50 bg-[url(https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw2MzQ2fDB8MXxzZWFyY2h8NXx8d2VifGVufDB8fHx8MTY0MjM2NzcxNA&ixlib=rb-1.2.1&q=80&w=1080)]" >
                         <div className="px-24 py-36 flex flex-col gap-y-8 max-w-full text-white">
                             <div >
-                                <h1 className="text-4xl flex flex-col w-full whitespace-pre-wrap leading-relaxed font-black">
+                                <h1 className="text-4xl w-full whitespace-pre-wrap leading-relaxed font-black">
                                     {"初期費用無料\nサブスクで高品質なホームページを提供"}
                                 </h1>
                             </div>
@@ -67,7 +67,6 @@ export default function TopPage() {
                         </Link>
                         <p>プロダクトリニューアルを行います。</p>
                     </div>
-                    <hr />
                 </div>
             </section>
             <section>
@@ -77,30 +76,32 @@ export default function TopPage() {
                         {"「ホームページを作りたいけど、よく分からない。」\n「初期費用が高い。」「いいサイトが出来ない。」\n分からなくても構いません。すべてお任せください。"}
                     </h1>
                 </div>
-                <div className="flex items-center gap-x-10 pt-10 font-bold">
-                    <div className="bg-orange-100 rounded-2xl text-orange-600 px-12 py-10">
-                        <h2 className="text-lg">相談は完全無料</h2>
-                        <p className="text-sm pt-2 whitespace-pre-wrap">
-                            {"お問い合わせ・相談の段階では一才お代\nをいただきません。\nサイト制作自体を検討している段階でも\n構いませんので、気になることなどあれ\nば気楽にご相談ください"}
-                        </p>
-                    </div>
-                    <div className="bg-yellow-100 rounded-2xl px-12 py-10">
-                        <h2 className="text-orange-600 text-lg">全てをお任せ</h2>
-                        <p className="text-yellow-600 text-sm pt-2 whitespace-pre-wrap">
-                            {"よく分からない、お任せしたいというお\n客様の場合、ご要望を汲み取って最適な\n形に仕上げさせていただきます。\n面倒なやり取りや、専門的な手続きなど\nは全てこちらで負担いたします。"}
-                        </p>
-                    </div>
-                    <div className="bg-green-100 rounded-2xl px-12 py-10">
-                        <h2 className="text-orange-600 text-lg">初期費用が無料</h2>
-                        <p className="text-green-600 text-sm pt-2 whitespace-pre-wrap">
-                            {"依頼する際は初期費用がある程度必要で\nすが、それでは負担が大きくなってしま\nいます。そこで、気軽にホームページ制\n作の依頼ができるように初期費用は頂い\nていません。"}
-                        </p>
-                    </div>
-                    <div className="bg-blue-100 rounded-2xl px-12 py-10">
-                        <h2 className="text-orange-600 text-lg">業界トップクラスのデザイン</h2>
-                        <p className="text-blue-600 text-sm pt-2 whitespace-pre-wrap">
-                            {"無駄な工程を削減し、相場よりも格安の\n料金で業界トップクラスのデザインを実\n現しています。\nお客様のご要望・イメージに寄り添う形\nでデザインさせて頂きます。"}
-                        </p>
+                <div className="overflow-x-auto">
+                    <div className="w-max flex items-center gap-x-10 pt-10 font-bold mx-16">
+                        <div className=" bg-orange-100 rounded-2xl text-orange-600 px-12 py-12">
+                            <h2 className="text-lg">相談は完全無料</h2>
+                            <p className="text-sm pt-2 whitespace-pre-wrap">
+                                {"お問い合わせ・相談の段階では一才お代をいただきません。\nサイト制作自体を検討している段階でも構いませんので、\n気になることなどあれば気楽にご相談ください"}
+                            </p>
+                        </div>
+                        <div className="bg-yellow-100 rounded-2xl px-12 py-12">
+                            <h2 className="text-orange-600 text-lg">全てをお任せ</h2>
+                            <p className="text-yellow-600 text-sm pt-2 whitespace-pre-wrap">
+                                {"よく分からない、お任せしたいというお客様の場合、\nご要望を汲み取って最適な形に仕上げさせていただきます。\n面倒なやり取りや、専門的な手続きなどは全てこちらで負担いたします。"}
+                            </p>
+                        </div>
+                        <div className="bg-green-100 rounded-2xl px-12 py-12">
+                            <h2 className="text-orange-600 text-lg">初期費用が無料</h2>
+                            <p className="text-green-600 text-sm pt-2 whitespace-pre-wrap">
+                                {"依頼する際は初期費用がある程度必要ですが、\nそれでは負担が大きくなってしまいます。\nそこで、気軽にホームページ制作の依頼ができるように初期費用は頂いていません。"}
+                            </p>
+                        </div>
+                        <div className="bg-blue-100 rounded-2xl px-12 py-12">
+                            <h2 className="text-orange-600 text-lg">業界トップクラスのデザイン</h2>
+                            <p className="text-blue-600 text-sm pt-2 whitespace-pre-wrap">
+                                {"無駄な工程を削減し、相場よりも格安の料金で\n業界トップクラスのデザインを実現しています。\nお客様のご要望・イメージに寄り添う形でデザインさせて頂きます。"}
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className="py-32 -rotate-2">
@@ -111,18 +112,18 @@ export default function TopPage() {
                         <button className="border bg-white border-blue-500 z-10 rounded-md text-sm text-blue-500 font-bold p-2">１〜３営業日内に返信いたします</button>
                         <div className="flex bg-blue-500 px-20 py-4 -mt-4 rounded-md">
                             <div className="mt-6 flex">
-                            <Image src="https://files.svgcdn.io/material-symbols-light/docs-outline.svg" alt="ドキュメントのイメージ画像" width={28} height={28} />
-                            <button className="text-white text-xl font-bold">無料相談はこちら</button>
+                                <Image src="https://files.svgcdn.io/material-symbols-light/docs-outline.svg" alt="ドキュメントのイメージ画像" width={28} height={28} />
+                                <button className="text-white text-xl font-bold">無料相談はこちら</button>
                             </div>
                         </div>
                     </Link>
                 </div>
             </section>
-            <section className="pt-20">
+            <section className="pt-20 b-20">
                 <div className="bg-center bg-cover bg-[url(https://images.unsplash.com/photo-1504610926078-a1611febcad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw2MzQ2fDB8MXxzZWFyY2h8MjR8fGJsYWNrfGVufDB8fHx8MTY0MjQ3MzgyNw&ixlib=rb-1.2.1&q=80&w=1080)]">
-                    <div className="text-white">
+                    <div className="text-white pb-20">
                         <h1 className="text-center pt-10 text-3xl font-black">私たち選ばれる、3つの理由</h1>
-                        <hr className="w-24 h-2 mx-auto mt-2"/>
+                        <div className="w-24 border-b-2 border-white mx-auto mt-2" />
                         <div className="flex justify-center gap-x-10 pt-10">
                             <div>
                                 <Image
@@ -133,7 +134,7 @@ export default function TopPage() {
                                     className="rounded-md"
                                 />
                                 <h2 className="font-bold pt-4">格安なのに最高品質のデザイン</h2>
-                                <p className="whitespace-pre-wrap pt-4">{"私たちは、ノーコードでサイトを制作しています。\nそのため、無駄な工数を発生させず、安く提供してい\nます。"}</p>
+                                <p className="whitespace-pre-wrap pt-4">{"私たちは、ノーコードでサイトを制作しています。\nそのため、無駄な工数を発生させず、安く提供しています。"}</p>
                             </div>
                             <div>
                                 <Image
@@ -144,7 +145,7 @@ export default function TopPage() {
                                     className="rounded-md"
                                 />
                                 <h2 className="font-bold pt-4">お客様のご要望を「汲み取り」ます</h2>
-                                <p className="whitespace-pre-wrap pt-4">{"何よりもお客様のご要望を最重視しています。お任せ\nしたい、デザインに拘りたい、記事を更新したい、な\nどお客様ごとのニーズをヒアリングでお聞きし、ご要\n望を汲み取ります。"}</p>
+                                <p className="whitespace-pre-wrap pt-4">{"何よりもお客様のご要望を最重視しています。\nお任せしたい、デザインに拘りたい、記事を更新したい、\nなどお客様ごとのニーズをヒアリングでお聞きし、\nご要望を汲み取ります。"}</p>
                             </div>
                             <div>
                                 <Image
@@ -155,14 +156,70 @@ export default function TopPage() {
                                     className="rounded-md"
                                 />
                                 <h2 className="whitespace-pre-wrap font-bold pt-4">{"サブスクリプションだから\n制作から保守管理まで全てお任せ"}</h2>
-                                <p className="whitespace-pre-wrap pt-4">{"お客様の負担を極力減らすため、当社では面倒な雑務\nや細々とした作業を引き受けています。\nそのため。お客様は煩わしいことでお時間を奪われる\nことはありません。"}</p>
+                                <p className="whitespace-pre-wrap pt-4">{"お客様の負担を極力減らすため、当社では面倒な雑務\nや細々とした作業を引き受けています。\nそのため、お客様は煩わしいことでお時間を奪われる\nことはありません。"}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                
+                <h1 className="text-center pt-10 text-3xl font-black">制作の流れ</h1>
+                <div className="w-24 border-b-2 border-black mx-auto mt-2" />
+                <div className="container mx-auto max-w-screen-lg pt-10">
+                    <div className="flex flex-col gap-y-4 pt-10">
+                        <div className="flex items-center gap-x-10 text-left border border-gray-300 rounded-lg px-10 py-10">
+                            <p className="text-gray-300 text-3xl font-black">01</p>
+                            <h2 className="w-44 font-bold text-xl whitespace-pre-wrap">お問い合わせ</h2>
+                            <p className="whitespace-pre-wrap">
+                                {"このサイトのフォームからお問い合わせください。\n気軽な質問でも勿論構いませんので、なにか気になることが一つでもあればご連絡ください。\n休日・祝日を除き、基本的に3営業日内に返信させていただきます。"}
+                            </p>
+                        </div>
+                        <div className="flex items-center gap-x-10 text-left border border-gray-300 rounded-lg px-10 py-10">
+                            <p className="text-gray-300 text-3xl font-black">02</p>
+                            <h2 className="w-44 font-bold text-xl whitespace-pre-wrap">無料提案</h2>
+                            <p className="whitespace-pre-wrap">
+                                {"チャットやビデオ通話、電話などお客様に適した形で無料相談を承っています。\n制作に関することから、料金やオプション、契約内容など様々なご質問にお答え\nいたします。"}
+                            </p>
+                        </div>
+                        <div className="flex items-center gap-x-10 text-left border border-gray-300 rounded-lg px-10 py-10">
+                            <p className="text-gray-300 text-3xl font-black">03</p>
+                            <h2 className="w-44 font-bold text-xl whitespace-pre-wrap">ヒアリング</h2>
+                            <p className="whitespace-pre-wrap">
+                                {"課題に沿ったホームページを作るため、ヒアリングを行います。\nイメージしやすいサイトや、競合他社のコンテンツを参考に、こちらからご提案も\nさせていただきます。"}
+                            </p>
+                        </div>
+                        <div className="flex items-center gap-x-10 text-left border border-gray-300 rounded-lg px-10 py-10">
+                            <p className="text-gray-300 text-3xl font-black">04</p>
+                            <h2 className="w-44 font-bold text-xl">ホームページ作成</h2>
+                            <p className="whitespace-pre-wrap">
+                                {"ヒアリングを元にサイトの構成イメージを送らせて頂きますので、もし問題無いよ\nうでしたらそれを元にホームページの制作を始めさせて頂きます。"}
+                            </p>
+                        </div>
+                        <div className="flex items-center gap-x-10 text-left border border-gray-300 rounded-lg px-10 py-10">
+                            <p className="text-gray-300 text-3xl font-black">05</p>
+                            <h2 className="w-44 font-bold text-xl">ホームページ公開</h2>
+                            <p className="whitespace-pre-wrap">
+                                {"ヒアリングを元にサイトの構成イメージを送らせて頂きますので、もし問題無いよ\nうでしたらそれを元にホームページの制作を始めさせて頂きます。"}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="pt-20">
+                <div
+                    className="pb-20 text-white text-center bg-center bg-cover bg-[url(https://images.unsplash.com/photo-1532292060982-8bfb986808e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw2MzQ2fDB8MXxzZWFyY2h8MXx8Ymx1ZSUyMHdlYnxlbnwwfHx8fDE2NDI2NjI0NDQ&ixlib=rb-1.2.1&q=80&w=1080)]"
+                >
+                    <h1 className="font-black text-4xl pt-20">無料でご相談承っております。</h1>
+                    <p className="text-lg pt-10">何も決まっていない状態でも構いません。お気軽にお問い合わせください。</p>
+                    <Link href={""} className="flex flex-col items-center">
+                        <div className="flex bg-white px-10 py-4 mt-10 rounded-md">
+                            <div className="my-2 flex">
+                                <Image src="https://files.svgcdn.io/material-symbols-light/docs-outline.svg" alt="ドキュメントのイメージ画像" width={28} height={28} />
+                                <button className="text-blue-500 text-xl font-bold">無料相談はこちら</button>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
             </section>
         </div>
     )
