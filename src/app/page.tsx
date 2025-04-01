@@ -221,6 +221,77 @@ export default function TopPage() {
                     </Link>
                 </div>
             </section>
+            <section>
+                <div className="text-center pt-20">
+                    <h1 className="text-3xl font-black">料金表</h1>
+                    <h2 className="pt-4 text-lg font-black">月額定額（サブスクリプション）で安心！</h2>
+                    <div className="w-24 border-b-2 border-black mx-auto mt-4" />
+                </div>
+                <div className="flex items-center">
+                    <div className="bg-cyan-600 rounded-md">
+                        <div>
+                            <h3>ライト</h3>
+                        </div>
+                        <div className="bg-white rounded-md">
+                            <p>サクッとホームページが欲しい</p>
+                            <div className="flex">
+                                <p>7,700円</p>
+                                <p>/円</p>
+                            </div>
+                            <p>8.470円（税込）</p>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>１〜４ページ</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>テンプレートデザイン</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>レスポンシブ対応</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>お問い合わせフォーム</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>ドメイン取得代行</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>検索エンジン最適化（SEO）</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>画像・テキスト修正１回/月</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>アニメーション</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>デザイン修正</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>お知らせ・ブログ機能（CMS）</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>アクセス解析</p>
+                            </div>
+                            <div className="flex">
+                                <p>✓</p>
+                                <p>写真撮影</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
